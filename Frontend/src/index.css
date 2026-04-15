@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --border: 0 0% 14.9%; /* Deep Zinc border */
+  }
+}
+
+body {
+  @apply bg-[#050505] text-[#ededed] antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom Scrollbar for Sleek UI */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 10px;
+}
